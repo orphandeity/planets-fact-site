@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={antonio.variable}>
       <body className="min-h-screen bg-black text-white">
         <Header />
         {children}

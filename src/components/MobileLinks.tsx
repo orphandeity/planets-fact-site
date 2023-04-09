@@ -3,10 +3,10 @@ import Image from "next/image";
 import chevron from "@/assets/icon-chevron.svg";
 
 const MobileLinks = () => (
-  <div className="min-h-screen">
+  <>
     <Link
       href={"/mercury"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-mercury" />
@@ -18,7 +18,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/venus"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-venus" />
@@ -30,7 +30,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/earth"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-earth" />
@@ -42,7 +42,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/mars"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-mars" />
@@ -54,7 +54,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/jupiter"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-jupiter" />
@@ -66,7 +66,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/saturn"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-saturn" />
@@ -78,7 +78,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/uranus"}
-      className="flex items-center justify-between border-b border-white/10 px-6 py-5"
+      className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-uranus" />
@@ -90,7 +90,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/neptune"}
-      className="flex items-center justify-between px-6 py-5"
+      className="mx-6 flex items-center justify-between py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
         <div className="h-4 w-4 rounded-full bg-neptune" />
@@ -100,7 +100,7 @@ const MobileLinks = () => (
         <Image src={chevron} alt="" width={6} height={8} />
       </div>
     </Link>
-  </div>
+  </>
 );
 
 export default MobileLinks;
