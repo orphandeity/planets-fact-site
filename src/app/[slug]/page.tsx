@@ -1,3 +1,4 @@
+import Container from "@/components/Container";
 import PlanetContent from "@/components/PlanetContent";
 import planets from "@/lib/data.json";
 
@@ -8,7 +9,7 @@ export default function Planet({ params }: { params: { slug: string } }) {
   );
 
   return (
-    <div>
+    <Container>
       <PlanetContent planet={planet} />
       <dl className="grid grid-cols-1 gap-2 md:grid-cols-4">
         <div className="border p-2">
@@ -36,6 +37,6 @@ export default function Planet({ params }: { params: { slug: string } }) {
           </dd>
         </div>
       </dl>
-    </div>
+    </Container>
   );
 }
