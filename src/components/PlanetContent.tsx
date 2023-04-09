@@ -3,11 +3,39 @@
 import { useWindow } from "@/lib/useWindow";
 import * as Tabs from "@radix-ui/react-tabs";
 import clsx from "clsx";
+import { useEffect, useState } from "react";
 
 export default function PlanetContent({ planet }: { planet: IPlanet }) {
+  const [color, setColor] = useState<string>(planet.color);
+
+  useEffect(() => {
+    function updateColor() {
+      switch (planet.name) {
+        case "Mercury":
+        default:
+          setColor("bg-mercury");
+        case "Venus":
+          setColor("bg-venus");
+        case "Earth":
+          setColor("bg-earth");
+        case "Mars":
+          setColor("bg-mars");
+        case "Jupiter":
+          setColor("bg-jupiter");
+        case "Saturn":
+          setColor("bg-saturn");
+        case "Uranus":
+          setColor("bg-uranus");
+        case "Neptune":
+          setColor("bg-neptune");
+      }
+    }
+    updateColor();
+  }, [planet]);
+
   const width = useWindow();
 
-  if (!width) return <p>there was an error</p>;
+  if (!width) return <p>there was an error.</p>;
 
   return (
     <Tabs.Root
