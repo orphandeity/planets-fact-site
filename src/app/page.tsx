@@ -1,9 +1,11 @@
-import { Antonio } from 'next/font/google'
+"use client";
 
-const antonio = Antonio({ subsets: ['latin'], variable: "--font-antonio" })
+import { useRouter } from "next/navigation";
 
-export default function Mercury() {
-  return (
-    <main></main>
-  )
+export default function Home() {
+  const router = useRouter();
+  // immediately redirect to Mercury page
+  router.push("/mercury");
+
+  return null;
 }

@@ -16,7 +16,7 @@ export default function Nav() {
         data-state={isOpen}
         className="absolute top-full hidden flex-col gap-4 data-[state=true]:flex md:static md:flex md:flex-row"
       >
-        <Link href={"/"}>Mercury</Link>
+        <Link href={"/mercury"}>Mercury</Link>
         <Link href={"/venus"}>Venus</Link>
         <Link href={"/earth"}>Earth</Link>
         <Link href={"/mars"}>Mars</Link>
