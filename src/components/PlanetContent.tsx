@@ -43,6 +43,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               alt={planet.name}
               width={Number(planet.imageSize.lg)}
               height={Number(planet.imageSize.lg)}
+              priority
             />
           ) : (
             <Image
@@ -50,6 +51,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               alt={planet.name}
               width={Number(planet.imageSize.md)}
               height={Number(planet.imageSize.md)}
+              priority
             />
           )}
         </div>
@@ -124,6 +126,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               alt={planet.name}
               width={Number(planet.imageSize.sm)}
               height={Number(planet.imageSize.sm)}
+              priority
             />
           </div>
         )}
