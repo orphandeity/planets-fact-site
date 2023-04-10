@@ -7,5 +7,9 @@ export default function Home() {
   // immediately redirect to Mercury page
   router.push("/mercury");
 
-  return null;
+  return (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  );
 }
