@@ -51,7 +51,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
               {planet.name}
             </h1>
-            <p className="text-[11px] leading-[22px] lg:text-[14px] lg:leading-[25px]">
+            <p className="text-[11px] leading-[22px] md:w-[339px] lg:w-[350px] lg:text-[14px] lg:leading-[25px]">
               {planet.overview.content}
             </p>
             <p className="mt-4 flex gap-1 text-xs leading-[25px] text-grayLight lg:mt-0 lg:text-sm">

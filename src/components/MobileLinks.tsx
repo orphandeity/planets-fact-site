@@ -1,6 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
-import chevron from "@/assets/icon-chevron.svg";
+import { ChevronRight } from "lucide-react";
 
 const MobileLinks = ({
   setIsOpen,
@@ -17,9 +16,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-mercury" />
         <span>Mercury</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/venus"}
@@ -30,9 +27,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-venus" />
         <span>Venus</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/earth"}
@@ -43,9 +38,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-earth" />
         <span>Earth</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/mars"}
@@ -56,9 +49,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-mars" />
         <span>Mars</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/jupiter"}
@@ -69,9 +60,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-jupiter" />
         <span>Jupiter</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/saturn"}
@@ -82,9 +71,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-saturn" />
         <span>Saturn</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/uranus"}
@@ -95,9 +82,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-uranus" />
         <span>Uranus</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
     <Link
       href={"/neptune"}
@@ -108,9 +93,7 @@ const MobileLinks = ({
         <div className="h-4 w-4 rounded-full bg-neptune" />
         <span>Neptune</span>
       </div>
-      <div>
-        <Image src={chevron} alt="" width={6} height={8} />
-      </div>
+      <ChevronRight size={16} color="#838391" opacity={0.6} />
     </Link>
   </>
 );
