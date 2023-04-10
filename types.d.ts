@@ -10,5 +10,6 @@ interface IPlanet {
   radius: string;
   temperature: string;
   images: TPlanetContent;
+  imageSize: TPlanetContent;
   color: string;
 }

@@ -37,14 +37,24 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
     >
       {width >= 768 && (
         <div className="grid h-[304px] place-content-center md:h-[460px] lg:aspect-square lg:h-[754px]">
-          <Image
-            src={image}
-            alt={planet.name}
-            width={Number(planet.images.size) * multiplier}
-            height={Number(planet.images.size) * multiplier}
-          />
+          {width >= 1440 ? (
+            <Image
+              src={image}
+              alt={planet.name}
+              width={Number(planet.imageSize.lg)}
+              height={Number(planet.imageSize.lg)}
+            />
+          ) : (
+            <Image
+              src={image}
+              alt={planet.name}
+              width={Number(planet.imageSize.md)}
+              height={Number(planet.imageSize.md)}
+            />
+          )}
         </div>
       )}
+
       <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-[69px] lg:mt-[126px] lg:flex-col lg:gap-10">
         <Tabs.Content value="overview" asChild>
           <div className="flex flex-col gap-4 px-6 md:max-w-[339px] md:px-0 lg:max-w-[350px]">
@@ -112,8 +122,8 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Image
               src={image}
               alt={planet.name}
-              width={Number(planet.images.size) * multiplier}
-              height={Number(planet.images.size) * multiplier}
+              width={Number(planet.imageSize.sm)}
+              height={Number(planet.imageSize.sm)}
             />
           </div>
         )}
