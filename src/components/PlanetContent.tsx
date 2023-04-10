@@ -130,7 +130,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               <span className="hidden text-grayLight group-data-[state=active]:text-white md:inline">
                 01
               </span>
-              <span className="t md:text-whiteext-grayLight font-bold uppercase tracking-[1.93px] group-data-[state=active]:text-white md:leading-[25px]">
+              <span className="font-bold uppercase tracking-[1.93px] text-grayLight group-data-[state=active]:text-white md:leading-[25px] md:text-white">
                 overview
               </span>
             </Tabs.Trigger>

@@ -29,7 +29,7 @@ export default function Nav() {
         className="absolute top-full z-50 hidden min-h-screen w-full translate-y-1 flex-col gap-4 bg-black data-[state=true]:flex md:static md:flex md:min-h-fit md:max-w-[768px] md:-translate-y-1 md:flex-row md:justify-between md:px-10 lg:items-center lg:px-0"
       >
         {width <= 375 ? (
-          <MobileLinks />
+          <MobileLinks setIsOpen={setIsOpen} />
         ) : (
           <>
             <div className="relative flex items-center">

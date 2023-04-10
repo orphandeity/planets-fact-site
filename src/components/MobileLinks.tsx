@@ -2,10 +2,15 @@ import Link from "next/link";
 import Image from "next/image";
 import chevron from "@/assets/icon-chevron.svg";
 
-const MobileLinks = () => (
+const MobileLinks = ({
+  setIsOpen,
+}: {
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => (
   <>
     <Link
       href={"/mercury"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -18,6 +23,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/venus"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -30,6 +36,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/earth"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -42,6 +49,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/mars"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -54,6 +62,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/jupiter"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -66,6 +75,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/saturn"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -78,6 +88,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/uranus"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between border-b border-white/10 py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
@@ -90,6 +101,7 @@ const MobileLinks = () => (
     </Link>
     <Link
       href={"/neptune"}
+      onClick={() => setIsOpen(false)}
       className="mx-6 flex items-center justify-between py-5"
     >
       <div className="flex items-center gap-6 text-[15px] font-bold uppercase leading-[25px] tracking-[1.36px]">
