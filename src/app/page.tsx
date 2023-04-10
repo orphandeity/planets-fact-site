@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 export default function Home() {
   const router = useRouter();
   // immediately redirect to Mercury page
-  router.push("/mercury");
+  // router.push("/mercury");
 
   return (
     <div>
