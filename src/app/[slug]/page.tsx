@@ -8,9 +8,9 @@ export default function Planet({ params }: { params: { slug: string } }) {
   );
 
   return (
-    <div className="mx-auto md:max-w-[768px] md:px-10 lg:max-w-[1440px] lg:px-40">
+    <div className="mx-auto flex flex-col gap-7 md:max-w-[768px] md:px-10 lg:max-w-[1440px] lg:gap-0 lg:px-40">
       <PlanetContent planet={planet} />
-      <dl className="mb-14 grid grid-cols-1 gap-2 md:mt-[27px] md:grid-cols-4 md:gap-3 lg:mt-0 lg:gap-8">
+      <dl className="mb-14 grid grid-cols-1 gap-2 px-6 md:grid-cols-4 md:gap-3 md:px-0 lg:gap-8">
         <div className="flex items-center justify-between border border-white/10 p-2 px-6 py-3 md:flex-col md:items-start md:px-4 md:pb-5 md:pt-4 lg:px-6 lg:pb-7 lg:pt-5">
           <dt className="text-[8px] font-bold uppercase leading-[16px] tracking-[0.73px] text-grayLight lg:text-[11px] lg:leading-[25px] lg:tracking-[1px]">
             rotation time
