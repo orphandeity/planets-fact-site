@@ -9,7 +9,7 @@ export default function Planet({ params }: { params: { slug: string } }) {
   );
 
   return (
-    <Container>
+    <div className="mx-auto md:max-w-[768px] md:px-10 lg:max-w-[1440px] lg:px-40">
       <PlanetContent planet={planet} />
       <dl className="grid grid-cols-1 gap-2 md:mt-[27px] md:grid-cols-4 lg:mt-0">
         <div className="border p-2">
@@ -37,6 +37,6 @@ export default function Planet({ params }: { params: { slug: string } }) {
           </dd>
         </div>
       </dl>
-    </Container>
+    </div>
   );
 }

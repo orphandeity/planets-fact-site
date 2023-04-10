@@ -45,9 +45,9 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           />
         </div>
       )}
-      <div className="flex flex-col-reverse md:flex-row md:gap-[69px] lg:mt-[126px] lg:flex-col lg:gap-10">
+      <div className="flex flex-col-reverse md:flex-row md:items-center md:gap-[69px] lg:mt-[126px] lg:flex-col lg:gap-10">
         <Tabs.Content value="overview" asChild>
-          <div className="flex flex-col gap-4 md:max-w-[339px] lg:max-w-[350px]">
+          <div className="flex flex-col gap-4 px-6 md:max-w-[339px] md:px-0 lg:max-w-[350px]">
             <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
               {planet.name}
             </h1>
@@ -67,7 +67,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           </div>
         </Tabs.Content>
         <Tabs.Content value="structure" asChild>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 px-6 md:max-w-[339px] md:px-0 lg:max-w-[350px]">
             <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
               {planet.name}
             </h1>
@@ -87,7 +87,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           </div>
         </Tabs.Content>
         <Tabs.Content value="geology" asChild>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 px-6 md:max-w-[339px] md:px-0 lg:max-w-[350px]">
             <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
               {planet.name}
             </h1>
@@ -118,17 +118,21 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           </div>
         )}
 
-        <Tabs.List className="flex flex-row justify-between md:w-full md:flex-col md:justify-center md:gap-4">
-          <div className="relative">
+        <Tabs.List className="flex h-[50px] flex-row justify-between border-b border-white/10 px-6 text-[9px] md:h-fit md:w-full md:flex-col md:justify-center md:gap-4 md:border-none md:px-0">
+          <div className="relative flex items-center">
             <Tabs.Trigger
               value="overview"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
-              <span className="hidden md:inline">01</span>
-              <span>overview</span>
+              <span className="hidden text-grayLight group-data-[state=active]:text-white md:inline">
+                01
+              </span>
+              <span className="t md:text-whiteext-grayLight font-bold uppercase tracking-[1.93px] group-data-[state=active]:text-white md:leading-[25px]">
+                overview
+              </span>
             </Tabs.Trigger>
             <div
               className={clsx([
@@ -138,16 +142,20 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             />
           </div>
 
-          <div className="relative">
+          <div className="relative flex items-center">
             <Tabs.Trigger
               value="structure"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
-              <span className="hidden md:inline">02</span>
-              <span>structure</span>
+              <span className="hidden text-grayLight group-data-[state=active]:text-white md:inline">
+                02
+              </span>
+              <span className="font-bold uppercase tracking-[1.93px] text-grayLight group-data-[state=active]:text-white md:leading-[25px] md:text-white">
+                structure
+              </span>
             </Tabs.Trigger>
             <div
               className={clsx([
@@ -157,16 +165,20 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             />
           </div>
 
-          <div className="relative">
+          <div className="relative flex items-center">
             <Tabs.Trigger
               value="geology"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
-              <span className="hidden md:inline">03</span>
-              <span>geology</span>
+              <span className="hidden text-grayLight group-data-[state=active]:text-white md:inline">
+                03
+              </span>
+              <span className="font-bold uppercase tracking-[1.93px] text-grayLight group-data-[state=active]:text-white md:leading-[25px] md:text-white">
+                geology
+              </span>
             </Tabs.Trigger>
             <div
               className={clsx([
