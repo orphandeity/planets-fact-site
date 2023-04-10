@@ -11,7 +11,7 @@ export default function Planet({ params }: { params: { slug: string } }) {
   return (
     <Container>
       <PlanetContent planet={planet} />
-      <dl className="grid grid-cols-1 gap-2 md:grid-cols-4">
+      <dl className="grid grid-cols-1 gap-2 md:mt-[27px] md:grid-cols-4 lg:mt-0">
         <div className="border p-2">
           <dt className="text-xs uppercase md:text-sm">rotation time</dt>
           <dd className="text-xl font-bold uppercase md:text-2xl lg:text-3xl">

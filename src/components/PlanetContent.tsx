@@ -5,6 +5,7 @@ import { useWindow } from "@/lib/useWindow";
 import * as Tabs from "@radix-ui/react-tabs";
 import clsx from "clsx";
 import Image from "next/image";
+import source from "@/assets/icon-source.svg";
 
 export default function PlanetContent({ planet }: { planet: IPlanet }) {
   // selected content
@@ -44,34 +45,64 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           />
         </div>
       )}
-      <div className="flex flex-col-reverse md:flex-row lg:flex-col">
+      <div className="flex flex-col-reverse md:flex-row md:gap-[69px] lg:mt-[126px] lg:flex-col lg:gap-10">
         <Tabs.Content value="overview" asChild>
-          <div>
-            <h1 className="text-5xl font-bold">{planet.name}</h1>
-            <p>{planet.overview.content}</p>
-            <p>
+          <div className="flex flex-col gap-4 md:max-w-[339px] lg:max-w-[350px]">
+            <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
+              {planet.name}
+            </h1>
+            <p className="text-[11px] leading-[22px] lg:text-[14px] lg:leading-[25px]">
+              {planet.overview.content}
+            </p>
+            <p className="mt-4 flex gap-1 text-xs leading-[25px] text-grayLight lg:mt-0 lg:text-sm">
               <span>source : </span>
-              <a href={planet.overview.source}>Wikipedia</a>
+              <a
+                href={planet.overview.source}
+                className="flex items-center gap-1 font-semibold underline"
+              >
+                Wikipedia
+                <Image src={source} alt="" width={12} height={12} />
+              </a>
             </p>
           </div>
         </Tabs.Content>
         <Tabs.Content value="structure" asChild>
-          <div>
-            <h1 className="text-5xl font-bold">{planet.name}</h1>
-            <p>{planet.structure.content}</p>
-            <p>
+          <div className="flex flex-col gap-4">
+            <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
+              {planet.name}
+            </h1>
+            <p className="text-[11px] leading-[22px] lg:text-[14px] lg:leading-[25px]">
+              {planet.structure.content}
+            </p>
+            <p className="mt-4 flex gap-1 text-xs leading-[25px] text-grayLight lg:mt-0 lg:text-sm">
               <span>source : </span>
-              <a href={planet.structure.source}>Wikipedia</a>
+              <a
+                href={planet.structure.source}
+                className="flex items-center gap-1 font-semibold underline"
+              >
+                Wikipedia
+                <Image src={source} alt="" width={12} height={12} />
+              </a>
             </p>
           </div>
         </Tabs.Content>
         <Tabs.Content value="geology" asChild>
-          <div>
-            <h1 className="text-5xl font-bold">{planet.name}</h1>
-            <p>{planet.geology.content}</p>
-            <p>
+          <div className="flex flex-col gap-4">
+            <h1 className="font-antonio text-[40px] font-medium uppercase md:text-[48px] lg:text-[80px]">
+              {planet.name}
+            </h1>
+            <p className="text-[11px] leading-[22px] lg:text-[14px] lg:leading-[25px]">
+              {planet.geology.content}
+            </p>
+            <p className="mt-4 flex gap-1 text-xs leading-[25px] text-grayLight lg:mt-0 lg:text-sm">
               <span>source : </span>
-              <a href={planet.geology.source}>Wikipedia</a>
+              <a
+                href={planet.geology.source}
+                className="flex items-center gap-1 font-semibold underline"
+              >
+                Wikipedia
+                <Image src={source} alt="" width={12} height={12} />
+              </a>
             </p>
           </div>
         </Tabs.Content>
@@ -87,12 +118,12 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           </div>
         )}
 
-        <Tabs.List className="flex flex-row justify-between md:flex-col md:gap-2">
+        <Tabs.List className="flex flex-row justify-between md:w-full md:flex-col md:justify-center md:gap-4">
           <div className="relative">
             <Tabs.Trigger
               value="overview"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:gap-4 md:border",
+                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
                 width >= 768 && planet.color,
               ])}
             >
@@ -111,7 +142,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Tabs.Trigger
               value="structure"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:gap-4 md:border",
+                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
                 width >= 768 && planet.color,
               ])}
             >
@@ -130,7 +161,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Tabs.Trigger
               value="geology"
               className={clsx([
-                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:gap-4 md:border",
+                "peer flex items-center justify-center p-2 data-[state=inactive]:bg-transparent md:w-full md:gap-4 md:border",
                 width >= 768 && planet.color,
               ])}
             >
