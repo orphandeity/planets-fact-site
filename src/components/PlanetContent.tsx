@@ -33,7 +33,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
       defaultValue="overview"
       value={content}
       onValueChange={(value) => setContent(value)}
-      className="md:flex md:flex-col lg:flex-row"
+      className="md:flex md:flex-col lg:flex-row lg:justify-between"
     >
       {width >= 768 && (
         <div className="grid h-[304px] place-content-center md:h-[460px] lg:aspect-square lg:h-[754px]">
@@ -123,7 +123,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Tabs.Trigger
               value="overview"
               className={clsx([
-                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:border-white/10 md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
@@ -146,7 +146,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Tabs.Trigger
               value="structure"
               className={clsx([
-                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:border-white/10 md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
@@ -169,7 +169,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             <Tabs.Trigger
               value="geology"
               className={clsx([
-                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
+                "group peer flex items-center justify-center data-[state=inactive]:bg-transparent md:w-full md:justify-start md:gap-4 md:border md:border-white/10 md:px-5 md:py-2 data-[state=inactive]:lg:hover:bg-grayDark",
                 width >= 768 && planet.color,
               ])}
             >
