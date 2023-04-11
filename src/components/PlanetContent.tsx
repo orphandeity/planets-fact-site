@@ -54,6 +54,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
           )}
           {content === "geology" && (
             <Image
+              priority
               src={planet.images.geology}
               alt=""
               width={163}
@@ -139,6 +140,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
             />
             {content === "geology" && (
               <Image
+                priority
                 src={planet.images.geology}
                 alt=""
                 width={163 / 2}
