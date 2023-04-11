@@ -34,7 +34,7 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
       className="md:flex md:flex-col lg:flex-row lg:justify-between"
     >
       {width >= 768 && (
-        <div className="grid h-[304px] place-content-center md:h-[460px] lg:aspect-square lg:h-[754px]">
+        <div className="relative grid h-[304px] place-content-center md:h-[460px] lg:aspect-square lg:h-[754px]">
           {width >= 1440 ? (
             <Image
               src={image}
@@ -50,6 +50,17 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               width={Number(planet.imageSize.md)}
               height={Number(planet.imageSize.md)}
               priority
+            />
+          )}
+          {content === "geology" && (
+            <Image
+              src={planet.images.geology}
+              alt=""
+              width={163}
+              height={199}
+              className={clsx([
+                "absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-1/4",
+              ])}
             />
           )}
         </div>
@@ -126,6 +137,17 @@ export default function PlanetContent({ planet }: { planet: IPlanet }) {
               height={Number(planet.imageSize.sm)}
               priority
             />
+            {content === "geology" && (
+              <Image
+                src={planet.images.geology}
+                alt=""
+                width={163 / 2}
+                height={199 / 2}
+                className={clsx([
+                  "absolute left-1/2 top-2/3 -translate-x-1/2 -translate-y-full",
+                ])}
+              />
+            )}
           </div>
         )}
 
