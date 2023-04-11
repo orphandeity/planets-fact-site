@@ -34,7 +34,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/mercury"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Mercury
               </Link>
@@ -43,7 +43,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/venus"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Venus
               </Link>
@@ -52,7 +52,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/earth"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Earth
               </Link>
@@ -61,7 +61,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/mars"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Mars
               </Link>
@@ -70,7 +70,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/jupiter"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Jupiter
               </Link>
@@ -79,7 +79,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/saturn"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Saturn
               </Link>
@@ -88,7 +88,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/uranus"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Uranus
               </Link>
@@ -97,7 +97,7 @@ export default function Nav() {
             <div className="relative flex items-center">
               <Link
                 href={"/neptune"}
-                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight md:h-[85px] lg:hover:text-white"
+                className="peer flex items-center justify-center text-[11px] font-bold uppercase leading-[25px] tracking-[1px] text-grayLight transition-colors md:h-[85px] lg:hover:text-white"
               >
                 Neptune
               </Link>
